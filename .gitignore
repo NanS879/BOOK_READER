@@ -1,0 +1,13 @@
+novels/
+books/
+__pycache__/
+*.pyc
+*.pyo
+progress.json
+config.json
+.env
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
