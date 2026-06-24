@@ -1,4 +1,4 @@
-# book-reader
+# BOOK_READER
 
 基于 Python 的电子书爬虫与阅读器，支持在 Z-Library 上搜索、下载电子书并阅读。提供 **桌面 GUI** 和 **彩色终端 CLI** 双模式。
 
