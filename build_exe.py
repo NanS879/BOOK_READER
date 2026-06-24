@@ -6,12 +6,12 @@ import os
 
 def main():
     print("=" * 60)
-    print("  novel-reader EXE 构建工具")
+    print("  book-reader EXE 构建工具")
     print("=" * 60)
     print()
 
     project_dir = os.path.dirname(os.path.abspath(__file__))
-    spec_file = os.path.join(project_dir, 'novel_reader.spec')
+    spec_file = os.path.join(project_dir, 'book_reader.spec')
     dist_dir = os.path.join(project_dir, 'dist')
 
     print("[1/3] 清理旧构建...")
@@ -35,14 +35,14 @@ def main():
         sys.exit(1)
 
     print("\n[3/3] 验证...")
-    exe_path = os.path.join(dist_dir, 'novel-reader.exe')
+    exe_path = os.path.join(dist_dir, 'book-reader.exe')
     if os.path.exists(exe_path):
         size_mb = os.path.getsize(exe_path) / (1024 * 1024)
         print(f"  [OK] EXE generated: {exe_path}")
         print(f"  文件大小: {size_mb:.1f} MB")
         print(f"\n构建成功！运行方式:")
         print(f"  {exe_path}")
-        print(f"  或直接双击 dist/novel-reader.exe")
+        print(f"  或直接双击 dist/book-reader.exe")
     else:
         print("  ✗ 未找到生成的 EXE 文件")
         sys.exit(1)

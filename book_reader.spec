@@ -1,5 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
-"""PyInstaller spec file for novel-reader GUI application"""
+"""PyInstaller spec file for book-reader GUI application"""
 
 a = Analysis(
     ['run.py'],
@@ -54,7 +54,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='novel-reader',
+    name='book-reader',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

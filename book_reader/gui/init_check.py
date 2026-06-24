@@ -344,7 +344,7 @@ def format_report(report: InitReport) -> str:
     """Format the report as human-readable text"""
     lines = []
     lines.append("=" * 60)
-    lines.append("  Novel Reader - GUI Init Check Report")
+    lines.append("  Book Reader - GUI Init Check Report")
     lines.append("=" * 60)
     lines.append(f"  Python:  {report.python_version}")
     lines.append(f"  Platform: {report.platform}")

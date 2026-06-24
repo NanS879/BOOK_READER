@@ -122,7 +122,7 @@ class SettingsTab:
         about_frame = ttk.LabelFrame(self.frame, text="关于", padding=14)
         about_frame.pack(fill=tk.X, pady=(0, 8))
 
-        ttk.Label(about_frame, text="Novel Reader v1.1",
+        ttk.Label(about_frame, text="Book Reader v1.1",
                   style='PanelHeading.TLabel').pack(anchor=tk.W)
         ttk.Label(about_frame, text="Z-Library 电子书搜索下载工具 (eAPI)",
                   style='PanelMuted.TLabel').pack(anchor=tk.W, pady=(2, 0))

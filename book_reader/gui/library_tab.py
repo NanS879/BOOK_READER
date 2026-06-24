@@ -182,7 +182,7 @@ class LibraryTab:
             if getattr(sys, 'frozen', False):
                 cmd = [sys.executable, 'read', '--terminal', title]
             else:
-                cmd = [sys.executable, '-m', 'novel_reader', 'read', '--terminal', title]
+                cmd = [sys.executable, '-m', 'book_reader', 'read', '--terminal', title]
 
             kwargs = {'cwd': config.base_dir}
             if os.name == 'nt':

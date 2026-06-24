@@ -1,9 +1,9 @@
-"""novel-reader 入口脚本 —— Z-Library 电子书爬虫与阅读器
+"""book-reader 入口脚本 —— Z-Library 电子书爬虫与阅读器
 
 用法:
-  novel-reader.exe             双击启动桌面 GUI 应用
-  novel-reader.exe search ...  CLI 命令行模式
-  novel-reader.exe list         CLI 命令行模式
+  book-reader.exe             双击启动桌面 GUI 应用
+  book-reader.exe search ...  CLI 命令行模式
+  book-reader.exe list         CLI 命令行模式
 """
 import sys
 import os
@@ -48,11 +48,11 @@ use_gui = len(sys.argv) == 1
 
 if use_gui:
     # ---- GUI 初始化检查 ----
-    print("正在启动 Novel Reader GUI...")
+    print("正在启动 Book Reader GUI...")
     print("运行初始化检查...")
 
     try:
-        from novel_reader.gui.init_check import (
+        from book_reader.gui.init_check import (
             run_init_checks, format_report, can_launch_gui, get_recommended_font,
         )
 
@@ -102,7 +102,7 @@ if use_gui:
         font_family = None
 
     # ---- 启动 GUI ----
-    from novel_reader.gui.main_window import NovelReaderApp
+    from book_reader.gui.main_window import NovelReaderApp
     try:
         app = NovelReaderApp(font_family=font_family)
         app.run()
@@ -118,7 +118,7 @@ if use_gui:
         input("按 Enter 退出...")
 
 else:
-    from novel_reader.main import main
+    from book_reader.main import main
     try:
         main()
     except Exception as e:

@@ -10,7 +10,7 @@ from .settings_tab import SettingsTab
 
 
 class NovelReaderApp:
-    """novel-reader 桌面应用主窗口
+    """book-reader 桌面应用主窗口
 
     Parameters:
         font_family: 从 init_check 检测到的可用字体族。为 None 时使用 TkDefaultFont。
@@ -22,7 +22,7 @@ class NovelReaderApp:
         self.font_family = font_family or 'TkDefaultFont'
 
         self.root = tk.Tk()
-        self.root.title("Novel Reader - 电子书阅读器")
+        self.root.title("Book Reader - 电子书阅读器")
         self.root.geometry("1040x720")
         self.root.minsize(860, 560)
 
@@ -171,7 +171,7 @@ class NovelReaderApp:
 
         left = ttk.Frame(header, style='Soft.TFrame')
         left.pack(side=tk.LEFT, fill=tk.X, expand=True)
-        ttk.Label(left, text="📖 Novel Reader", style='Title.TLabel',
+        ttk.Label(left, text="📖 Book Reader", style='Title.TLabel',
                   background=self.colors['panel_alt']).pack(anchor=tk.W)
         ttk.Label(left, text="搜索、下载、管理和阅读电子书",
                   style='Muted.TLabel', background=self.colors['panel_alt']).pack(

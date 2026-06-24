@@ -426,20 +426,20 @@ def cmd_list(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog='novel-reader',
+        prog='book-reader',
         description='电子书爬虫与阅读器 —— Z-Library 搜索、下载、阅读',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog='''
 示例:
-  python -m novel_reader setup                             配置 Z-Library 认证
-  python -m novel_reader search "Python Programming"       搜索书籍
-  python -m novel_reader search "Python" --format epub     按格式搜索
-  python -m novel_reader search "Python" --language english 按语言搜索
-  python -m novel_reader download <Z-Library-URL>          下载书籍
-  python -m novel_reader read                              选择并阅读书籍
-  python -m novel_reader read "Python Cookbook"            直接阅读指定书籍
-  python -m novel_reader read --terminal "Python Cookbook" EPUB 终端阅读模式
-  python -m novel_reader list                              查看已下载书籍
+  python -m book_reader setup                             配置 Z-Library 认证
+  python -m book_reader search "Python Programming"       搜索书籍
+  python -m book_reader search "Python" --format epub     按格式搜索
+  python -m book_reader search "Python" --language english 按语言搜索
+  python -m book_reader download <Z-Library-URL>          下载书籍
+  python -m book_reader read                              选择并阅读书籍
+  python -m book_reader read "Python Cookbook"            直接阅读指定书籍
+  python -m book_reader read --terminal "Python Cookbook" EPUB 终端阅读模式
+  python -m book_reader list                              查看已下载书籍
         ''',
     )
 
